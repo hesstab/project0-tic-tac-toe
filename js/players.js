@@ -23,18 +23,6 @@ const gameInfo = {
         playersArray.push(playerAlternate());
         return this["row" + rowNum][indexNum] = this[playerAlternate()];
   },
-  // playerChoice: function (rowNum, indexNum) {
-  //     if (rowNum === 1) {
-  //       playersArray.push(playerAlternate());
-  //       return this.["row" + rowNum][indexNum] = this[playerAlternate()];
-  //     } else if (rowNum === 2) {
-  //       playersArray.push(playerAlternate());
-  //       return this.row2[indexNum] = this[playerAlternate()];
-  //     } else if (rowNum === 3) {
-  //       playersArray.push(playerAlternate());
-  //       return this.row3[indexNum] = this[playerAlternate()];
-  //     }
-  // },
 
   playerWinner: function () {
     if (this.row1[0] === 'X' && this.row1[1] === 'X' && this.row1[2] === 'X') {
