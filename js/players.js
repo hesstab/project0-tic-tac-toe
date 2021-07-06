@@ -24,42 +24,24 @@ const gameInfo = {
         return this["row" + rowNum][indexNum] = this[playerAlternate()];
   },
 
-  playerWinner: function () {
-    if (this.row1[0] === 'X' && this.row1[1] === 'X' && this.row1[2] === 'X') {
-      alert("player X won!");
-    } else if (this.row2[0] === 'X' && this.row2[1] === 'X' && this.row2[2] === 'X') {
-      alert("player X won!");
-    } else if (this.row3[0] === 'X' && this.row3[1] === 'X' && this.row3[2] === 'X') {
-      alert("player X won!");
-    } else if (this.row1[0] === 'X' && this.row2[0] === 'X' && this.row3[0] === 'X') {
-      alert("player X won!");
-    } else if (this.row1[1] === 'X' && this.row2[1] === 'X' && this.row3[1] === 'X') {
-      alert("player X won!");
-    } else if (this.row1[2] === 'X' && this.row2[2] === 'X' && this.row3[2] === 'X') {
-      alert("player X won!");
-    } else if (this.row1[0] === 'X' && this.row2[1] === 'X' && this.row3[2] === 'X') {
-      alert("player X won!");
-    } else if (this.row1[2] === 'X' && this.row2[1] === 'X' && this.row3[0] === 'X') {
-      alert("player X won!");
-    }
-    if (this.row1[0] === 'O' && this.row1[1] === 'O' && this.row1[2] === 'O') {
-      alert("player O won!");
-    } else if (this.row2[0] === 'O' && this.row2[1] === 'O' && this.row2[2] === 'O') {
-      alert("player O won!");
-    } else if (this.row3[0] === 'O' && this.row3[1] === 'O' && this.row3[2] === 'O') {
-      alert("player O won!");
-    } else if (this.row1[0] === 'O' && this.row2[0] === 'O' && this.row3[0] === 'O') {
-      alert("player O won!");
-    } else if (this.row1[1] === 'O' && this.row2[1] === 'O' && this.row3[1] === 'O') {
-      alert("player O won!");
-    } else if (this.row1[2] === 'O' && this.row2[2] === 'O' && this.row3[2] === 'O') {
-      alert("player O won!");
-    } else if (this.row1[0] === 'O' && this.row2[1] === 'O' && this.row3[2] === 'O') {
-      alert("player O won!");
-    } else if (this.row1[2] === 'O' && this.row2[1] === 'O' && this.row3[0] === 'O') {
-      alert("player O won!");
+  playerWinner: function (player) {
+    if (this.row1[0] === this[player] && this.row1[1] === this[player] && this.row1[2] === this[player]) {
+      alert(`player ${this[player]} won!`);
+    } else if (this.row2[0] === this[player] && this.row2[1] === this[player] && this.row2[2] === this[player]) {
+      alert(`player ${this[player]} won!`);
+    } else if (this.row3[0] === this[player] && this.row3[1] === this[player] && this.row3[2] === this[player]) {
+      alert(`player ${this[player]} won!`);
+    } else if (this.row1[0] === this[player] && this.row2[0] === this[player] && this.row3[0] === this[player]) {
+      alert(`player ${this[player]} won!`);
+    } else if (this.row1[1] === this[player] && this.row2[1] === this[player] && this.row3[1] === this[player]) {
+      alert(`player ${this[player]} won!`);
+    } else if (this.row1[2] === this[player] && this.row2[2] === this[player] && this.row3[2] === this[player]) {
+      alert(`player ${this[player]} won!`);
+    } else if (this.row1[0] === this[player] && this.row2[1] === this[player] && this.row3[2] === this[player]) {
+      alert(`player ${this[player]} won!`);
+    } else if (this.row1[2] === this[player] && this.row2[1] === this[player] && this.row3[0] === this[player]) {
+      alert(`player ${this[player]} won!`);
     }
   }
-
 
 }

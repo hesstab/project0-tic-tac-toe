@@ -9,7 +9,8 @@ $(document).ready(function () {
     const playerSelect = gameInfo.playerChoice(rowNum, indexNum);
     $(this).html(playerSelect);
     $(this).prop('disabled', true);
-    gameInfo.playerWinner();
+    const buttonText = playersArray[playersArray.length - 2];
+    gameInfo.playerWinner(buttonText);
   })
 
 });
