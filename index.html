@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>tic-tac-toe</title>
+  <link rel="icon" type="image/png" href="images/favicon.png"/>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <script src="js/jquery.js"></script>
   <script src="js/game.js"></script>
   <script src="js/players.js"></script>
@@ -13,25 +15,67 @@
 <body>
 
   <header>
-    <h1>Tic-Tac-Toe</h1>
+
+    <div class="header-image">
+      <img src="images/tictac.png"  class="animate__animated animate__wobble" alt="Tic Tac Toe logo">
+    </div>
+
+    <div class="header-div">
+      <div class="header-button1">
+        <button type="button" class='head-x-button' name="button"></button>
+      </div>
+      <div class="header-display">
+        <h3 class="display-header">Let's Play!</h3>
+      </div>
+      <div class="header-button2">
+        <button type="button" class='head-o-button' name="button"></button>
+      </div>
+    </div>
+
+    <div>
+      <button type="button" class="reset-button" name="button" onClick="window.location.reload();">click here to play again</button>
+    </div>
+
   </header>
 
-  <table>
-  <tr>
-    <td><button type="button" class="buttons" id="row1-index0">Click me!</button></td>
-    <td class="vert"><button type="button" class="buttons" id="row1-index1">Click me!</button></td>
-    <td><button type="button" class="buttons" id="row1-index2">Click me!</button></td>
+  <table class="game-table">
+
+    <tr class="first-row">
+      <td class="piece-x piece-o" >
+        <button type="button" class="buttons first-row-button" id="row1-index0"></button>
+      </td>
+      <td class="vert" class="piece-x piece-o">
+        <button type="button" class="buttons first-row-button" id="row1-index1"></button>
+      </td>
+      <td class="piece-x piece-o" >
+        <button type="button" class="buttons first-row-button" id="row1-index2"></button>
+      </td>
+    </tr>
+
+  <tr class="second-row" >
+    <td class="hori" class="piece-x piece-o" >
+      <button type="button" class="buttons second-row-button" id="row2-index0"></button>
+    </td>
+    <td class="vert hori" class="piece-x piece-o" >
+      <button type="button" class="buttons second-row-button" id="row2-index1"></button>
+    </td>
+    <td class="hori" class="piece-x piece-o" >
+      <button type="button" class="buttons second-row-button" id="row2-index2"></button>
+    </td>
   </tr>
+
   <tr>
-    <td class="hori"><button type="button" class="buttons" id="row2-index0">Click me!</button></td>
-    <td class="vert hori"><button type="button" class="buttons" id="row2-index1">Click me!</button></td>
-    <td class="hori"><button type="button" class="buttons" id="row2-index2">Click me!</button></td>
+    <td class="piece-x piece-o" >
+      <button type="button" class="buttons third-row-button" id="row3-index0"></button>
+    </td>
+    <td class="vert" class="piece-x piece-o" >
+      <button type="button" class="buttons third-row-button" id="row3-index1"></button>
+    </td>
+    <td class="piece-x piece-o" >
+      <button type="button" class="buttons third-row-button" id="row3-index2"></button>
+    </td>
   </tr>
-  <tr>
-    <td><button type="button" class="buttons" id="row3-index0">Click me!</button></td>
-    <td class="vert"><button type="button" class="buttons" id="row3-index1">Click me!</button></td>
-    <td><button type="button" class="buttons" id="row3-index2">Click me!</button></td>
-  </tr>
+
 </table>
 
 </body>

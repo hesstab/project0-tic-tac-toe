@@ -1,7 +1,6 @@
-// first the logic of the game: players
+// first the logic of the game
 
-// define an object where 2 players can have X or O
-let playersArray = [];
+let playersArray = ['player1'];
 
 const playerAlternate = function () {
   if (playersArray[playersArray.length - 1] === 'player2') {
@@ -25,23 +24,37 @@ const gameInfo = {
   },
 
   playerWinner: function (player) {
+    let result = '';
     if (this.row1[0] === this[player] && this.row1[1] === this[player] && this.row1[2] === this[player]) {
-      alert(`player ${this[player]} won!`);
+      result = `${this[player]} is the winner!`;
+      return result;
     } else if (this.row2[0] === this[player] && this.row2[1] === this[player] && this.row2[2] === this[player]) {
-      alert(`player ${this[player]} won!`);
+      result = `${this[player]} is the winner!`;
+      return result;
     } else if (this.row3[0] === this[player] && this.row3[1] === this[player] && this.row3[2] === this[player]) {
-      alert(`player ${this[player]} won!`);
+      result = `${this[player]} is the winner!`;
+      return result;
     } else if (this.row1[0] === this[player] && this.row2[0] === this[player] && this.row3[0] === this[player]) {
-      alert(`player ${this[player]} won!`);
+      result = `${this[player]} is the winner!`;
+      return result;
     } else if (this.row1[1] === this[player] && this.row2[1] === this[player] && this.row3[1] === this[player]) {
-      alert(`player ${this[player]} won!`);
+      result = `${this[player]} is the winner!`;
+      return result;
     } else if (this.row1[2] === this[player] && this.row2[2] === this[player] && this.row3[2] === this[player]) {
-      alert(`player ${this[player]} won!`);
+      result = `${this[player]} is the winner!`;
+      return result;
     } else if (this.row1[0] === this[player] && this.row2[1] === this[player] && this.row3[2] === this[player]) {
-      alert(`player ${this[player]} won!`);
+      result = `${this[player]} is the winner!`;
+      return result;
     } else if (this.row1[2] === this[player] && this.row2[1] === this[player] && this.row3[0] === this[player]) {
-      alert(`player ${this[player]} won!`);
+      result = `${this[player]} is the winner!`;
+      return result;
+    } else {
+        if (this.row1.join('').length === 3 && this.row2.join('').length === 3 && this.row3.join('').length === 3) {
+          result = `It's a Draw!`
+          return result;
+        }
+      }
     }
-  }
 
 }
