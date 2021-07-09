@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>tic-tac-toe</title>
+  <title>Tic-Tac-Toe</title>
   <link rel="icon" type="image/png" href="images/favicon.png"/>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -25,7 +25,7 @@
         <button type="button" class='head-x-button' name="button"></button>
       </div>
       <div class="header-display">
-        <h3 class="display-header">Let's Play!</h3>
+        <h3 class="display-header">&#9756; Pick a side &#9758;</h3>
       </div>
       <div class="header-button2">
         <button type="button" class='head-o-button' name="button"></button>
@@ -41,37 +41,37 @@
   <table class="game-table">
 
     <tr class="first-row">
-      <td class="piece-x piece-o" >
+      <td class="piece-x piece-o" id="c1">
         <button type="button" class="buttons first-row-button" id="row1-index0"></button>
       </td>
-      <td class="vert" class="piece-x piece-o">
+      <td class="piece-x piece-o" id="c2">
         <button type="button" class="buttons first-row-button" id="row1-index1"></button>
       </td>
-      <td class="piece-x piece-o" >
+      <td class="piece-x piece-o" id="c3">
         <button type="button" class="buttons first-row-button" id="row1-index2"></button>
       </td>
     </tr>
 
-  <tr class="second-row" >
-    <td class="hori" class="piece-x piece-o" >
+  <tr class="second-row">
+    <td class="piece-x piece-o" id="c4">
       <button type="button" class="buttons second-row-button" id="row2-index0"></button>
     </td>
-    <td class="vert hori" class="piece-x piece-o" >
+    <td class="piece-x piece-o" id="c5">
       <button type="button" class="buttons second-row-button" id="row2-index1"></button>
     </td>
-    <td class="hori" class="piece-x piece-o" >
+    <td class="piece-x piece-o" id="c6">
       <button type="button" class="buttons second-row-button" id="row2-index2"></button>
     </td>
   </tr>
 
-  <tr>
-    <td class="piece-x piece-o" >
+  <tr class="third-row">
+    <td class="piece-x piece-o" id="c7">
       <button type="button" class="buttons third-row-button" id="row3-index0"></button>
     </td>
-    <td class="vert" class="piece-x piece-o" >
+    <td class="piece-x piece-o" id="c8">
       <button type="button" class="buttons third-row-button" id="row3-index1"></button>
     </td>
-    <td class="piece-x piece-o" >
+    <td class="piece-x piece-o" id="c9">
       <button type="button" class="buttons third-row-button" id="row3-index2"></button>
     </td>
   </tr>

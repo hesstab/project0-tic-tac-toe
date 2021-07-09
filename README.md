@@ -1,43 +1,19 @@
-# Tic-Tac-Toe game
+# Tic-Tac-Toe
 
-## Subheading
+Tic-Tac-Toe is a simple *X* and *O* game that utilises javascript and jQuery and some simple CSS animations.
 
-Alternative Subheading
-----------------------
+Try it here: [Tic-Tac-Toe site](file:///Users/hesst/Projects/sei45-projects/project0/index.html).
 
-Also Heading
-============
+## Introduction
 
-It supports paragraphs.
+Tic-Tac-Toe is a paper-and-pencil game for two players, *X* and *O*, who take turns marking the spaces in a 3×3 grid.
 
-> Quotes
+The player who succeeds in placing three of their marks in a diagonal, horizontal, or vertical row is the winner.
 
-## Lists
-* Groucho
-* Harpo
-- Chico
+It is a solved game with a forced draw assuming best play from both players.
 
-1. Groucho
-2. Harpo
-3. Chico
-4. Gummo
+## Development
 
-# Emphasis
-
-You can make text *italic* or **bold**
-
-
-# Links
-
-Here is a link to the [W3C site](http://www.w3c.org/).
-
-# Code
-## Inline code
-
-This is a code `$`.
-
-## Code block
-
-```javascript
-const a = 'whatever';
-```
+- javascript
+- jQuery 3.6.0
+- [Animate CSS](https://animate.style/)

@@ -15,14 +15,6 @@ td {
 table {
   margin: 5px auto;
 }
-/* .vert {
-  border-left: 2px solid black;
-  border-right: 2px solid black;
-}
-.hori {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-} */
 
 /* ************************************************************************* */
 
@@ -43,10 +35,6 @@ table {
   box-sizing: border-box;
 }
 
-/* .table-class {
-  border-colla: collapse;
-} */
-
 .piece-x {
 	background-image: url('../images/icon-x.png');
 }
@@ -56,9 +44,7 @@ table {
 }
 
 .display-header {
-  font-family: "Arial", sans-serif;
-  padding-top: 30px;
-  margin-top: 40px;
+  font-family: "Arial", sans-serif;s
 }
 
 .header-image {
@@ -68,23 +54,25 @@ table {
 .header-div {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+  margin-top: 60px;
 }
 
 .header-button1 {
   margin: 0 30px;
+  margin-top: 25px;
 }
 
 .header-button2 {
   margin: 0 30px;
+  margin-top: 25px;
 }
 
 .header-display {
-  flex: 0.29;
+  flex: 0.3;
 }
 
 .head-x-button {
-  /* border-radius: 50%; */
   background-image: url('../images/icon-x.png');
   background-size:contain;
   width: 35px;
@@ -97,7 +85,6 @@ table {
 }
 
 .head-o-button {
-  /* border-radius: 50%; */
   background-image: url('../images/icon-o.png');
   background-size:contain;
   width: 35px;
