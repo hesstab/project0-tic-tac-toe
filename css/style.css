@@ -60,16 +60,12 @@ table {
 
 .header-button1 {
   margin: 0 30px;
-  margin-top: 25px;
+  margin-top: 5px;
 }
 
 .header-button2 {
   margin: 0 30px;
-  margin-top: 25px;
-}
-
-.header-display {
-  flex: 0.3;
+  margin-top: 5px;
 }
 
 .head-x-button {

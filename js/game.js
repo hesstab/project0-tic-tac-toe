@@ -25,8 +25,6 @@ $(document).ready(function () {
   })
 
   $('.buttons').on('click', function () {
-    $('.head-x-button').prop('disabled', true);
-    $('.head-o-button').prop('disabled', true);
     const $idName = $(this).attr('id');
     const rowNum = Number($idName.substr(3, 1));
     const indexNum = Number($idName.substr(10));
@@ -49,7 +47,8 @@ $(document).ready(function () {
       $('.head-o-button').prop('disabled', true);
       $('.reset-button').css('visibility', 'visible');
     }
-
+    $('.head-x-button').prop('disabled', true);
+    $('.head-o-button').prop('disabled', true);
 
   })
 
