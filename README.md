@@ -4,6 +4,9 @@ Tic-Tac-Toe is a simple *X* and *O* game that utilises javascript and jQuery and
 
 Live demo: [Tic-Tac-Toe](https://hesstab.github.io/tic-tac-toe/).
 
+![GitHub Logo](/images/git-logo.png)
+
+
 ## Game instructions
 
 Tic-Tac-Toe is a paper-and-pencil game for two players, *X* and *O*, who take turns marking the spaces in a 3×3 grid.
