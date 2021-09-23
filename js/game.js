@@ -29,6 +29,7 @@ $(document).ready(function () {
     const rowNum = Number($idName.substr(3, 1));
     const indexNum = Number($idName.substr(10));
     const playerSelect = gameInfo.playerChoice(rowNum, indexNum);
+
     if (playerSelect === 'X') {
       $(this).addClass('piece-x');
       $('.display-header').html('&#9758; O turn &#9756;');
@@ -36,9 +37,12 @@ $(document).ready(function () {
       $(this).addClass('piece-o');
       $('.display-header').html('&#9758; X turn &#9756;');
     }
+
     $(this).prop('disabled', true);
+
     const buttonText = playersArray[playersArray.length - 2];
     const gameResult = gameInfo.playerWinner(buttonText);
+
     if(gameResult) {
       $('.display-header').html(gameResult);
       $('.header-display h3').addClass('animate__animated animate__flash')
@@ -47,6 +51,7 @@ $(document).ready(function () {
       $('.head-o-button').prop('disabled', true);
       $('.reset-button').css('visibility', 'visible');
     }
+    
     $('.head-x-button').prop('disabled', true);
     $('.head-o-button').prop('disabled', true);
 
