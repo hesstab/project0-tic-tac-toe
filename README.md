@@ -2,7 +2,7 @@
 
 Tic-Tac-Toe is a simple *X* and *O* game that utilises javascript and jQuery and some simple CSS animations.
 
-Demo: [Tic-Tac-Toe](https://hesstab.github.io/tic-tac-toe/).
+Live demo: [Tic-Tac-Toe](https://hesstab.github.io/tic-tac-toe/).
 
 ## Game instructions
 
